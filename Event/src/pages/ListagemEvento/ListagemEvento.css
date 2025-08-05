@@ -1,0 +1,103 @@
+/* Título */
+.tituloEvento {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tituloEvento h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+  margin-top: 25px;
+}
+
+.tituloEvento hr {
+  width: 120px;
+  border: 2px solid #b51d44;
+  margin: 0 auto;
+}
+
+/* Seleção de eventos */
+.selecaoDeEventos {
+  padding: 8px 10px;
+  font-size: 16px;
+  margin: 20px 0;
+  border: none;
+  border-bottom: #201849 1px solid;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.selecaoDeEventos:focus {
+  border-color: #b51d44;
+}
+
+/* Tabela */
+.tabela_lista_eventos {
+  width: 100%;
+  max-width: 1000px;
+  background-color: white;
+  box-shadow: 0 0 10px #00000010;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.tabela_lista_eventos table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.tabela_lista_eventos th,
+.tabela_lista_eventos td {
+  padding: 12px 8px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+.tabela_lista_eventos th {
+  background-color: #b51d44;
+  color: white;
+  font-weight: 600;
+}
+
+.tabela_lista_eventos td[data-cell] {
+  color: #444;
+}
+
+/* Ícones */
+.imagemListagem {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.imagemListagem:hover {
+  transform: scale(1.2);
+}
+
+/* Responsividade sem scroll horizontal */
+@media (max-width: 768px) {
+  .tabela_lista_eventos th,
+  .tabela_lista_eventos td {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
+
+  .imagemListagem {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Mensagem de nenhum evento */
+.corpoListagem td[colspan="6"] {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-style: italic;
+}

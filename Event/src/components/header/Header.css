@@ -1,0 +1,113 @@
+header {
+  height: 75px;
+  box-shadow: 1px 4px 4px 0px #00000030;
+}
+
+.header_header {
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.link_header {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #1f1848;
+  font-weight: 400;
+}
+
+.nav_header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.botaozinhbo .botao {
+  height: 35px;
+  width: 100px;
+  margin-left: 15px;
+}
+
+.imagem {
+  height: 30px;
+}
+
+.adm_info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.adm_info img {
+  height: 32px;
+  width: 32px;
+  object-fit: cover;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) and (max-width: 900px) {
+  .header_header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+  }
+
+  .nav_header {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .botaozinhbo .botao {
+    width: 80px;
+    height: 40px;
+    margin-left: 0;
+    font-size: 0.9rem;
+  }
+
+  .adm_info {
+   
+    text-align: center;
+    gap: 4px;
+  }
+
+  .adm_info .link_header {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Esconde tudo exceto o nav com adm_info */
+  .header_header > * {
+    display: none;
+  }
+
+  .header_header > nav.navs_header {
+    display: flex !important;
+    justify-content: flex-end; /* Alinha tudo à direita */
+    width: 100%;
+    padding-right: 20px; /* Espaço à direita */
+  }
+
+  .adm_info {
+   
+    align-items: center;
+    gap: 10px;
+  }
+
+  .adm_info .link_header {
+    font-size: 14px;
+    color: #1f1848;
+    text-decoration: none;
+    white-space: nowrap; /* Impede quebra do texto */
+  }
+
+  .adm_img {
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+  }
+}

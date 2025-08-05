@@ -1,0 +1,102 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.listagem {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #B51D44;
+  color: white;
+  text-align: center;
+}
+
+.listagem h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 19px;
+  line-height: 1.3;
+}
+
+.listagem hr {
+  max-width: 200px;
+  width: 100%;
+  border-style: solid;
+  border-top-width: 1px;
+  border-color: white;
+  margin-top: 5px;
+  margin: 10px auto;
+  color: white;
+}
+
+.item_lista img {
+  height: 20px;
+}
+
+
+.botao_edicao_descricao img {
+  height: 35px;
+
+}
+
+.tabela {
+  margin-top: 40px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tabela table {
+  width: 100%;
+  min-width: 500px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.tabela .tabela_cabecalho th {
+  border-bottom: 1px solid white;
+  padding: 10px 5px;
+  font-size: 14px;
+  color: white;
+}
+
+.item_lista td {
+  padding: 30px 5px;
+  border-bottom: 1px solid white;
+  font-size: 14px;
+  color: white;
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px) {
+  .listagem {
+    padding: 20px 10px;
+  }
+
+  .listagem h1 {
+    font-size: 16px;
+  }
+
+  .listagem hr {
+    max-width: 120px;
+  }
+
+  .tabela {
+    margin-top: 20px;
+  }
+
+  .tabela .tabela_cabecalho th {
+    font-size: 13px;
+    padding: 8px 5px;
+  }
+
+  .item_lista td {
+    font-size: 12px;
+    padding: 12px 5px;
+  }
+
+  .item_lista img {
+    height: 16px;
+  }
+}

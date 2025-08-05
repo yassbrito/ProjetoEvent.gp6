@@ -1,0 +1,287 @@
+/* Estilos existentes e base */
+.home-banner img {
+  width: 100%;
+}
+
+.home-eventos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.tituloHome {
+  display: flex;
+  flex-direction: column; 
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tituloHome h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.tituloHome hr {
+  width: 60px; /* Default width for the HR line */
+  height: 3px;
+  background-color: #c2185b;
+  border: none;
+  margin: 0 auto; /* Center the HR line */
+}
+
+.secao-eventos hr {
+    max-width: 200px;
+    width: 100%;
+    margin-top: 7px;
+    margin-bottom: 50px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #B51D44;
+}
+
+.secao-eventos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conjunto-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cartao-evento {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    height: 250px;
+    width: 225px;
+    margin: 0 15px;
+    border: 2px solid #821B47;
+    font-size: small;
+    border-radius: 5px;
+}
+
+.link-evento {
+    color: #B51D44;
+    text-decoration: none;
+    font-size: medium;
+}
+.cartao-evento,
+.evento-card { /* Combined for consistency if they refer to the same element */
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  height: 250px;
+  width: 225px;
+  margin: 15px; /* Consistent margin for cards */
+  border: 2px solid #821B47;
+  font-size: small;
+  border-radius: 5px;
+}
+
+.home-contato {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+.contato-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contato-mapa img {
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contato-info {
+  font-size: 1rem;
+  color: #444;
+  max-width: 300px;
+  line-height: 1.6;
+}
+
+.home-eventos hr { /* Specific to home-eventos */
+  max-width: 200px;
+  width: 100%;
+  margin-top: 7px;
+  margin-bottom: 50px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #B51D44;
+}
+
+.eventos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-visao img {
+  width: 100%;
+  height: 458px; /* Consider `object-fit: cover;` with `height: auto;` or a specific height for better responsiveness */
+}
+
+.imagem-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.imagem-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.textoDaImagem {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  max-height: 80%;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+
+  white-space: normal;
+  box-sizing: border-box;
+  overflow: auto;
+  transform: translate(-50%, -50%);
+}
+
+
+.evento-link {
+  color: #B51D44;
+  text-decoration: none;
+}
+
+/* --- */
+@media screen and (max-width: 768px) {
+  .conjunto-cards,
+  .eventos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cartao-evento,
+  .evento-card {
+    width: 95%;              /* Agora ocupa quase toda a tela, sem sobrar muito */
+    max-width: 320px;        /* Limita largura para manter harmonia */
+    padding: 15px;           /* Padding mais enxuto */
+    margin: 10px 0;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+
+  .home-eventos {
+    padding: 20px 10px;
+  }
+
+  .tituloHome h2 {
+    font-size: 1.5rem;
+  }
+
+  .tituloHome hr,
+  .home-eventos hr {
+    max-width: 100px;
+    margin: 0 auto 20px auto;
+  }
+
+  .contato-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .contato-info {
+    max-width: 90%;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .contato-mapa img {
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+  }
+
+  .home-visao img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 280px;
+  }
+
+  .textoDaImagem {
+    width: 90%;
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+
+  .imagem-container,
+  .imagem-banner {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tituloHome h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .home-eventos,
+  .home-contato {
+    padding: 10px;
+  }
+
+  .cartao-evento,
+  .evento-card {
+    width: 95%;
+    max-width: 300px;
+    padding: 12px;
+    font-size: 0.85rem;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+
+  .textoDaImagem {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .tituloHome hr,
+  .home-eventos hr {
+    max-width: 70px;
+    margin: 8px auto;
+  }
+
+  .contato-info {
+    font-size: 0.85rem;
+    padding: 0 8px;
+  }
+
+  .home-visao img {
+    max-height: 220px;
+  }
+}
